@@ -39,7 +39,7 @@ const switchPlayer = function() {
 btnRoll.addEventListener('click', function(){
     if (playing) {
         //1.create a random dice number
-        const dice = Math.trunc(Math.random() * 6) + 1;
+        let dice = Math.trunc(Math.random() * 6) + 1;
 
         //2.change the dice photo according to created number
         diceEl.classList.remove('hidden');
